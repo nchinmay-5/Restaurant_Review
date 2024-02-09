@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .form-group input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .form-group input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  #or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .google-signin-btn {
+    width: 100%;
+    background-color: #db4437;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .google-signin-btn:hover {
+    background-color: #c13584;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Login Form</h2>
+
+  <form id="loginForm" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="username">User Name:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password1">Password:</label>
+      <input type="password1" id="password1" name="password1" required>
+    </div>
+
+
+    <div class="form-group">
+      <label for="password2">Password:</label>
+      <input type="password2" id="password2" name="password2" required>
+    </div>
+
+    <div class="form-group">
+      <input type="submit" value="Login">
+      <div id="or">OR</div>
+      <button type="button" class="google-signin-btn">Sign in with Google</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
