@@ -1,0 +1,100 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  background-image: url(Screenshot\ 2024-02-09\ 214444.png);
+}
+
+.container {
+  width: 70%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px,10px,5px black;
+  background-color: bisque;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+.review-form {
+  margin-top: 20px;
+}
+.form-group{
+    font-size: small;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+.upload_img{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    width: 20%; 
+    display: flex;
+    font-size: 7px;
+}
+input{
+    margin: 5px;
+}
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 20%; 
+  height: 20px;
+  margin: 5px;
+  display: flex;
+  font-size: 9px;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}

@@ -31,9 +31,6 @@ def user_login(request):
             user = authenticate(request, username=username, password=password)
             if user:
                 login(request, user)
-                print("asd")
-                print(request.user.email)
-                print(user.email)
                 return redirect('home')
     else:
         form = LoginForm()
@@ -43,3 +40,7 @@ def user_login(request):
 def user_logout(request):
     logout(request)
     return redirect('login')
+
+
+def review(request):
+    pass
